@@ -2,13 +2,20 @@
   "name": "realtime-pizza",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT",
+  "scripts": {
+     "watch":"npm run mix watch"
+  },
+   "license": "MIT",
   "dependencies": {
     "ejs": "^3.1.9",
     "express": "^4.18.2",
     "express-ejs-layouts": "^2.5.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.22"
+    "laravel-mix": "^6.0.49",
+    "nodemon": "^2.0.22",
+    "resolve-url-loader": "5.0.0",
+    "sass": "^1.63.6",
+    "sass-loader": "12.1.0"
   }
 }

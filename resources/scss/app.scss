@@ -1,0 +1,70 @@
+@import './variables';
+
+
+body{
+    font-family: 'Lato','sans-serif';
+-webkit-font-smoothing: antialiased;
+color: $dark;
+}
+.cls{
+        width: 1200px; /* Set the desired width of your page */
+        height: 800px; /* Set the desired height of your page */
+        margin: 0 auto; /* Center the container horizontally */
+
+}
+img {
+    position: relative;
+    top: -10px; /* Adjust this value as per your requirement */
+  }
+  
+nav li:last-child a{
+    &:hover{
+        background: $primary-hover;
+    }
+}
+
+nav li a{
+    transition: all .3s ease-in-out;
+    &:hover{
+        color: $primary;
+    }
+}
+
+.pizza-body{
+    height: 100px;
+    width: 100px;
+}
+
+section.hero{
+    background: $secondary;
+}
+
+.size{
+    background: $secondary;
+}
+.add-to-cart{
+    border: 2px solid $primary;
+    color: $primary;
+    &:hover{
+        background: $primary;
+        border: $pure;
+        color: $pure;
+    }
+}
+.btn-primary{
+    background: red;
+}
+/* Using class selector */
+.cart-icon {
+    width: 30px; /* Adjust this value to change the width */
+    height: 30px; /* Adjust this value to change the height */
+    /* If you want to preserve the aspect ratio, set only one dimension (width or height) and use 'auto' for the other */
+    /* width: 30px; height: auto; */
+  }
+  section.cart {
+background: gray;
+  }
+
+  section.login{
+    background: gray;
+  }
